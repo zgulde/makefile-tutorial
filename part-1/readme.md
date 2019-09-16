@@ -4,6 +4,8 @@ Makefiles contain **rules** (how to convert inputs to output) that consist of
 **targets** (outputs), **prerequisites** (inputs that produce the outputs), and
 **recipes** (how to turn the inputs into outputs).
 
+**_Note that all indentation in makefiles must be tabs, not spaces_**.
+
 This make file defines a single rule. The rule specifies a target named
 `index.html` and it's prerequisite is `index.md`. The recipe to produce the
 target involves a pandoc command. The recipe can be multiple lines, but *every
@@ -26,4 +28,6 @@ Where `TARGET` is one of the targets that is defined in your `Makefile`.
    will now notice that you made a change to the input file, and that
    `index.html` is out of date, so it will rebuild it.
 1. Create a rule to convert this `readme.md` file to html. Test out the rule you
-   created.
+   created. (Remember to use tabs for indentation when editing the Makefile, not
+   spaces, or you will get errors!)
+
